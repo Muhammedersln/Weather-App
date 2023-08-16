@@ -11,8 +11,8 @@ const Home = () => {
   const [error, setError] = useState("");
 
   const api_key = process.env.WEATHER_APP_API_KEY;
-  const url = `http://api.weatherapi.com/v1/forecast.json?key=916499568563497b94a141649231408&q=${location}&days=7&aqi=yes&alerts=yes`;
-
+  const url = `http://api.weatherapi.com/v1/forecast.json?key=${api_key}&q=${location}&days=7&aqi=yes&alerts=yes`;
+  
   const handleSearch = async (e) => {
     if (e.key === "Enter") {
       e.preventDefault();
