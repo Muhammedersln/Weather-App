@@ -12,6 +12,8 @@ const Home = () => {
 
   const api_key = process.env.WEATHER_APP_API_KEY;
   const url = `https://api.weatherapi.com/v1/forecast.json?key=${api_key}&q=${location}&days=7&aqi=yes&alerts=yes`;
+
+
   
   const handleSearch = async (e) => {
     if (e.key === "Enter") {
